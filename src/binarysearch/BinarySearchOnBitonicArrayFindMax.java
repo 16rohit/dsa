@@ -1,6 +1,6 @@
 package binarysearch;
 
-public class BinarySearchOnBitonicArray {
+public class BinarySearchOnBitonicArrayFindMax {
     public static void main(String[] args) {
         int[] arr = {10, 6, 2, 1};
         int ans = binarySearch(arr, 0, arr.length - 1);
