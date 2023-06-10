@@ -1,7 +1,6 @@
 package binarysearch;
 
-public class BinarySearchPeakElement {
-
+public class BinarySearchOnBitonicArray {
     public static void main(String[] args) {
         int[] arr = {10, 6, 2, 1};
         int ans = binarySearch(arr, 0, arr.length - 1);
