@@ -8,12 +8,15 @@ public class BinarySearchAllocatePages {
         int n = 2;
         int sum = 0;
         int start = Integer.MIN_VALUE;
-        for (int i = 0; i < arr.length; ++i) {
-            if (start < arr[i])
-                start = arr[i];
-            sum += arr[i];
+
+        if (n <= arr.length) {
+            for (int i = 0; i < arr.length; ++i) {
+                if (start < arr[i])
+                    start = arr[i];
+                sum += arr[i];
+            }
+            binarySearch(arr, start, sum, n);
         }
-        binarySearch(arr, start, sum, n);
         System.out.println(ans);
     }
 
