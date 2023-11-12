@@ -7,7 +7,12 @@ public class Bot extends Player {
 
     MoveStrategy strategy;
 
+    public Bot(String name, String email, String phone) {
+        super(name, email, phone);
+    }
+
     public Bot(MoveStrategy strategy) {
+        super("x", "y", "z");
         this.strategy = strategy;
     }
 

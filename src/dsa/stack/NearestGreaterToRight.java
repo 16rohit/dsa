@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class NearestGreaterToRight {
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 3, 2, 4};
+        int[] arr = new int[]{1, 3, 0, 0, 1, 2, 4};
         int[] ans = nearestGreaterToRight(arr);
         System.out.println(Arrays.toString(ans));
     }
@@ -19,7 +19,7 @@ public class NearestGreaterToRight {
             } else if (stack.peek() > arr[i]) {
                 ans[i] = stack.peek();
             } else {
-                while (stack.isEmpty() || stack.peek() < arr[i])
+                while (!stack.isEmpty() && stack.peek() <= arr[i])
                     stack.pop();
                 if (stack.isEmpty()) {
                     ans[i] = -1;
