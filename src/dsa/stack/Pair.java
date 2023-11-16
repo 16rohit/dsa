@@ -1,6 +1,8 @@
 package dsa.stack;
 
-public class Pair {
+import java.util.Comparator;
+
+public class Pair implements Comparable<Pair> {
     int first;
     int second;
 
@@ -15,5 +17,10 @@ public class Pair {
 
     public int getSecond() {
         return second;
+    }
+
+    @Override
+    public int compareTo(Pair o) {
+        return this.getFirst() - o.getFirst();
     }
 }
