@@ -1,4 +1,4 @@
-package dsa.dynamicprogramming;
+package dsa.dynamicprogramming.zerooneknapsack;
 
 public class ZeroOneKnapsackRecursive {
     public static void main(String[] args) {

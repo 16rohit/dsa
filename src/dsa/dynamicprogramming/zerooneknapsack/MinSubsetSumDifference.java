@@ -1,4 +1,4 @@
-package dsa.dynamicprogramming;
+package dsa.dynamicprogramming.zerooneknapsack;
 
 import java.util.Arrays;
 
