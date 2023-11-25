@@ -23,7 +23,7 @@ public class UnboundedKnapsack {
     private static int unboundedKnapsack(int[] wt, int[] val, int w, int n, int[][] dp) {
         if (w == 0 || n == 0)
             return 0;
-        if (dp[n][w] !=-1)
+        if (dp[n][w] != -1)
             return dp[n][w];
         if (wt[n - 1] > w) {
             dp[n][w] = unboundedKnapsack(wt, val, w, n - 1, dp);
